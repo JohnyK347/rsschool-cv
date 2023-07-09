@@ -113,40 +113,18 @@ hr {
     padding: 91px 0 116px ;
 }
 
-.skills-ellipse-1 {
-    width: 229px;
-    height: 227px;
-    background: url(/assets/img/Ellipse-1.png) no-repeat;
-    background-position: 0 0;
-    z-index: 1;
-    background-size: 217px 210px;
+.skills-wrapper-ellipse{
     position: relative;
 }
 
-.skills-ellipse-2 {
-    width: 229px;
-    height: 227px;
-    background: url(/assets/img/Ellipse-2.png) no-repeat;
-    background-position: 0 0;
-    z-index: 1;
-    background-size: 217px 210px;
-    position: relative;
-}
 
-.skills-ellipse-3 {
-    width: 229px;
-    height: 227px;
-    background: url(/assets/img/Ellipse-3.png) no-repeat;
-    background-position: 0 0;
+.skills-img-inner1, 
+.skills-img-inner2, 
+.skills-img-inner3 {
+    position: absolute;
     z-index: 1;
-    background-size: 217px 210px;
-    position: relative;
-}
-
-.skills-img {
-    position: relative;
-    top: 56px;
-    left: -4px;
+    top: 61px;
+    left: 64px
 }
 
 .education {
