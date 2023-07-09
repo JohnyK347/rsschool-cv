@@ -3,10 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>cv</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Hello world!</h1>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+              <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link" href="#about">About </a>
+                </li>
+                <li class="nav-menu-item grey">
+                    <a class="nav-menu-link" href="#code-example">CODE EXAMPLE</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link" href="#my-skills">my skills</a>
+                </li>
+                <li class="nav-menu-item grey">
+                    <a class="nav-menu-link" href="#my-contacts">my contacts</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link" href="#education">EDUCATION</a>
+                </li>
+              </ul>
+            </nav>
+            <hr>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="about" id="about">
+                <h1 class="about-title">Evgeny Kabanov  front-end developer</h1>
+            <div class="about-inner-wrapper">
+                <img class="about-image" src="./assets/img/lKXIzjhMv3s-1.png" alt="Portfolio photo" width="362" height="467">
+                <p class="about-text">Hello, my name is Evgeny Kabanov, I'm 29 years old,
+                    I'm a kid from the city of Volgograd. 
+                   I have just started to master the profession of a frontend developer.
+                    Thanks to my perseverance and striving for my goal, 
+                   I plan to become a really ultra-fit developer like Naruto once became a hokage!
+                   I am currently continuing my studies.</p>
+            </div>
+            <hr>
+            </section>
+            <section class="my-skills" id="my-skills">
+                <h2 class="my-skills-title">My skills</h2>
+                <div class="skills-wrapper">
+                    <div class="skills-ellipse-1">
+                        <img class="skills-img" src="./assets/img/img-1.png" alt="my skills" width="99" height="99">
+                    </div>
+                    <div class="skills-ellipse-2">
+                        <img class="skills-img" src="./assets/img/pngegg-1.png" alt="my skills" width="99" height="99">
+                    </div>
+                    <div class="skills-ellipse-3">
+                        <img class="skills-img" src="./assets/img/img-3.png" alt="my skills" width="99" height="99">
+                    </div>
+                </div>
+                <hr>
+            </section>
+            <section class="education" id="education">
+                <h2 class="education-title">Education</h2>
+                <div class="education-wrapper">
+                    <div class="educate-column">
+                        <h3 class="Serebryakovka educate-column-title">
+                            <a href="https://new.serebryakovka.ru">P.A. Serebryakov Institute of Arts</a>
+                        </h3>
+                        <div class="educate-text-wrap">
+                            <p class="educate-text">P.A. Serebryakov Institute of Arts
+                                This is my first education, where I learned to play clarinet and saxophone in an orchestra. <span class="English">I also raised my English level to A2 there.</span> Thanks to this, I work in several orchestras, and also play in a cover band, which contributed to the acquisition of such valuable soft skills in the IT field.     </p>
+                        </div>
+                    </div>
+                    <div class="educate-column">
+                        <h3 class="rs educate-column-title">RS-school Academy</h3>
+                        <div class="educate-text-wrap second-educate">
+                            <p class="educate-text-2">
+                                At this stage I am studying at RS -School. 
+                                This is a very interesting process, this training just gives you a kick in the ass so that you go and do everything right!
+                            </p>
+                            <a class="rs-logo-1" href="https://docs.rs.school/#/README"><img src="./assets/img/rs_school_js-1.svg" alt="rs-school" width="183" height="100"></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </section>
+            <section class="code-example" id="code-example">
+                <h2 class="code-example-title">Code example</h2>
+                <div class="example">
+                    <pre><code class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(68, 68, 68); color: rgb(221, 221, 221);">
+                        
+const whatDO = <span class="hljs-function"><span class="hljs-params">(can, nowDate = Date())</span> =&gt;</span> ({
+                 ...can,
+                    nowDate
+                               })
+                        const FirstCan ={
+                            first: <span class="hljs-string" style="color: rgb(221, 136, 136);">'doexercises'</span>,
+                            second:<span class="hljs-string" style="color: rgb(221, 136, 136);">'lie'</span>
+                        }
+                        
+                        <span class="hljs-built_in" style="color: rgb(221, 136, 136);">console</span>.log(whatDO(FirstCan))</code>
+                    </pre>
+                </div>
+                <hr>
+            </section>
+        </div>
+    </main>
+    <footer class="footer" id="my-contacts">
+        <div class="container">
+            <div class="footer-container">
+                <ul class="footer-menu">
+                    <li class="footer-menu-items">
+                        <a class="footer-menu-link" href="tel:+38-050-456-56-56">Phone</a>
+                    </li>
+                    <li class="footer-menu-items">
+                        <a class="footer-menu-link" href="zhenek.jax.k@mil.ru">E-mail</a>
+                    </li>
+                    <li class="footer-menu-items">
+                        <a class="footer-menu-link" href="https://github.com/JohnyK347/rsschool-cv/tree/gh-pages">Git-hub</a>
+                    </li>
+                </ul>
+                <div class="foot-logo-wrap">
+                <p class="year">2023</p>
+                <a class="rs-logo-1" href="https://docs.rs.school/#/README"><img src="./assets/img/rs_school_js-1.svg" alt="rs-school" width="100" height="100"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
